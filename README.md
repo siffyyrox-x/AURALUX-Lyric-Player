@@ -1,29 +1,32 @@
 AURALUX
-AURALUX is a single-file, frontend-only music and synchronized lyric player designed for GitHub Pages.
+AURALUX is a cinematic browser music player that turns a pasted YouTube song link into a focused listening experience with automatic synchronized lyrics.
 Features
-- Paste a YouTube URL and play it through the official YouTube embedded player
-- Animated artwork, playback visualizer, lighting and motion effects
-- Synchronized LRC lyric playback
-- Import .lrc files
-- Paste plain lyrics and create timing with Tap Sync
-- Auto-fit plain lyrics across the track duration
-- Click any lyric line to seek to that timestamp
-- Local MP3, WAV and other browser-supported audio playback
-- Recent YouTube history stored with localStorage
-- Per-video lyric sessions stored locally in the browser
-- Export synchronized lyrics as .lrc
-- Export the current project/session as .json
-- Download a locally loaded audio file
-- Responsive desktop and mobile design
+- Paste a YouTube song link and start playback directly
+- Automatic track title and artist detection
+- Automatic lyrics search through LRCLIB
+- Synced lyrics when a timed version is available
+- Duration-aware lyric matching to reduce incorrect versions
+- Automatic timing fallback when only plain lyrics are available
+- Smooth karaoke-style lyric progression and auto-scrolling
+- Click any lyric line to seek to that moment in the song
+- Original YouTube thumbnail used as the player artwork
+- Automatic thumbnail quality fallback so broken artwork is avoided
+- Animated player controls, progress tracking and ambient interface effects
+- Recent-track history stored locally in the browser
+- Responsive desktop and mobile layout
 - Reduced-motion accessibility support
-- No backend, database, account, API key, framework or build step
-Deployment
-1. Put index.html in the root of a GitHub repository.
-2. Open Settings > Pages.
-3. Choose Deploy from a branch.
-4. Select main and /root.
-5. Save.
-Note
-YouTube media is played through YouTube's official embedded player. A static frontend cannot and should not extract or download YouTube audio. Lyrics are supplied by the user through LRC import, pasted text or Tap Sync.
+- Built with plain HTML, CSS and JavaScript
+- No framework, account, database or build process required
+How It Works
+1. Paste a YouTube song link.
+2. AURALUX loads the track through the YouTube player.
+3. The track metadata is detected automatically.
+4. AURALUX searches for the closest lyric match using title, artist and duration.
+5. Synced lyrics follow the music automatically while it plays.
+No manual lyric pasting or timing setup is required.
+Notes
+Lyrics depend on the availability and accuracy of matching data from LRCLIB. If a synchronized version is unavailable but plain lyrics are found, AURALUX creates an automatic timing approximation for playback.
+YouTube playback is handled through the official embedded player, while AURALUX provides the surrounding player interface, artwork, lyric synchronization and local listening history.
+
 P.S.
 This project was built through AI-assisted vibe coding, guided by my own creativity, ideas, and basic understanding of development. It was an experimental project focused on exploring what’s possible through AI-powered development.
