@@ -1,4 +1,5 @@
-AURALUX https://siffyyrox-x.github.io/AURALUX-Lyric-Player/
+AURALUX
+https://siffyyrox-x.github.io/AURALUX-Lyric-Player/
 AURALUX is a cinematic browser music player that turns a pasted YouTube song link into a focused listening experience with automatic synchronized lyrics.
 Features
 - Paste a YouTube song link and start playback directly
